@@ -8,19 +8,19 @@ A singly linked list in JavaScript.
 const ParrotSll = require("parrot-sll");
 
 const addressList = ParrotSll();
-list.add({name: 'Bruce Lee', street: 'Kung Fu Street 12'});
-list.add({name: 'John Snow', street: 'Winterfell 1'});
+addressList.add({ name: 'Bruce Lee', street: 'Kung Fu Street 12' });
+addressList.add({ name: 'John Snow', street: 'Winterfell 1' });
 
-console.log(list.size()) // "2"
+console.log(addressList.size()) // "2"
 
-console.log(list.get(0).name) // "Bruce Lee"
-console.log(list.get(1).name) // "John Snow"
+console.log(addressList.get(0).name) // "Bruce Lee"
+console.log(addressList.get(1).name) // "John Snow"
 
-list.remove(0);
+addressList.remove(0);
 
-console.log(list.size()) // "1"
+console.log(addressList.size()) // "1"
 
-console.log(list.get(0).name) // "John Snow"
+console.log(addressList.get(0).name) // "John Snow"
 ```
 
 Please note that
