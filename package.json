@@ -1,0 +1,34 @@
+{
+  "name": "parrot-sll",
+  "version": "1.0.0",
+  "description": "Singly Linked List",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Annoraaq/parrot-sll.git"
+  },
+  "keywords": [
+    "Singly",
+    "Linked",
+    "List",
+    "Data",
+    "Structures",
+    "Coding",
+    "Interview",
+    "JavaScript",
+    "Algorithms",
+    "LinkedList"
+  ],
+  "author": "Johannes Baum",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Annoraaq/parrot-sll/issues"
+  },
+  "homepage": "https://github.com/Annoraaq/parrot-sll#readme",
+  "devDependencies": {
+    "jest": "^24.7.1"
+  }
+}
