@@ -23,8 +23,6 @@ console.log(addressList.size()) // "1"
 console.log(addressList.get(0).name) // "John Snow"
 ```
 
-Please note that
-
 ## Methods
 
 - `add(object: any): void` Adds an object to the list
