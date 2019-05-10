@@ -4,17 +4,19 @@ module.exports = () => {
   let head = null;
   let size = 0;
 
+  const invertIndex = (index) => size - index - 1;
+
   const getNode = index => {
-    const invertedIndex = size - index - 1;
+    const invertedIndex = invertIndex(index);
     if (invertedIndex === 0) return head;
+
     let currentIndex = 0;
     let currentNode = head;
-    while (currentIndex < invertedIndex && currentNode.next !== null) {
+    while (currentIndex < invertedIndex && currentNode != null) {
       currentIndex++;
       currentNode = currentNode.next;
     }
-    if (currentIndex == invertedIndex) return currentNode;
-    return null;
+    return currentNode;
   };
 
   const getNodeData = index => {
@@ -38,7 +40,7 @@ module.exports = () => {
   };
 
   const remove = index => {
-    const invertedIndex = size - index - 1;
+    const invertedIndex = invertIndex(index);
     if (invertedIndex === 0) {
       const oldHead = head;
       head = head.next;
